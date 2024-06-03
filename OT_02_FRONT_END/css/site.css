@@ -1,0 +1,75 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   Configurações gerais   */
+
+/*  Cabeçalho */
+
+header{
+    height: 170px;
+    background-color: #008eb6;
+}
+
+header img{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+header h1{
+    float: left;
+    margin: 50px 0 0 30px;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/* MENU */
+
+nav{
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    height: 55px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .opcao{
+    float: left;
+    width: 31.3%;
+    background-color: #b1ccf5;
+    padding: 10px 0;
+    margin: 0 1%;
+    font-size: 26px;
+}
+
+nav .opcao:hover{
+    background-color: #83afd3;
+}
+
+/*  Area geral para conteudos especificos de cada pagina */ 
+section{
+
+    clear: both;
+    min-height: 360px;
+    width: 100%;
+    margin-top: 0px;
+   
+}
+
+/* Rodapé */
+
+footer{
+    background-color: #005f89;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}

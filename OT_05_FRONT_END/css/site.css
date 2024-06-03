@@ -1,0 +1,197 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   Configurações gerais   */
+
+/******************************************************************  
+Cabeçalho 
+*******************************************************************/
+header{
+    height: 170px;
+    background-color: #008eb6;
+}
+
+header img{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+header h1{
+    float: left;
+    margin: 50px 0 0 30px;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/******************************************************************
+MENU 
+*******************************************************************/
+nav{
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    height: 55px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .opcao{
+    float: left;
+    width: 31.3%;
+    background-color: #b1ccf5;
+    padding: 10px 0;
+    margin: 0 1%;
+    font-size: 26px;
+}
+
+nav .opcao:hover{
+    background-color: #83afd3;
+}
+/*****************************************************************
+ Area geral para conteudos especificos de cada pagina  
+*******************************************************************/
+section{
+
+    clear: both;
+    min-height: 360px;
+    width: 100%;
+    margin-top: 0px;
+   
+}
+
+/* Rodapé */
+
+footer{
+    background-color: #005f89;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}
+/*****************************************************************
+Configuração da pagina inicial
+*******************************************************************/
+
+section #topo{
+    width: 900px;
+    margin: 0px auto;
+    height: 250px;
+    
+}
+
+.geladeira{
+    height: 250px;
+    width: 125px;
+}
+
+.direita{
+    float: right;
+}
+
+.esquerda{
+    float: left;
+}
+
+section #titulos{
+    float: left;
+    height: 250px;
+    width: 650px;
+    margin: 0px auto;
+}
+
+h2{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+section p{
+    clear: both;
+    text-align: center;
+    margin: 10px 80px;
+}
+
+/*****************************************************************
+Configuração da pagina  de produtos                               
+*******************************************************************/
+
+.tabelaProdutos{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.tituloTabela{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    border: transparent;
+}
+
+tr,td,th{
+    border: 1px solid #B0C4DE;
+    padding: 5px;
+}
+
+tr,td{
+    font-size: 14px;
+}
+
+tr:nth-child(even){
+    background-color: #b1ccf5;
+}
+
+tr:nth-child(odd){
+    background-color: #83afd3;
+}
+
+.tabelaFreezers{
+    margin: 10px auto;
+    text-align: center;
+}
+
+/***********************************************************
+Configuração da pagina fale conosco
+************************************************************/
+
+.faleConosco{
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faleConosco input, .faleConosco textarea, .faleConosco select{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.faleConosco textarea{
+    height: 100px;
+    resize: none;
+}
+
+.faleConosco button{
+    width: 30%;
+    margin: 0 10%;
+    background-color: #b1ccf5;
+    font-weight: bold;
+    font-size: 16px;
+}
