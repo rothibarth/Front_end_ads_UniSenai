@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldigo Geladeiras</title>
+    <link rel="stylesheet" type = "text/css" href="../../css/site.css">
+    <script src="/OT_10_FRONT_END_JQUERY/site.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <img src="/OT_10_FRONT_END_JQUERY/imgs/logo.png" alt="Logo da Coldigo Geladeiras">
+        <h1>Coldigo Geladeiras</h1>
+    </header>
+
+    <nav>
+        <a href="/OT_10_FRONT_END_JQUERY/index.html"><div class="opcao">Inicio</div></a>
+        <a href="/OT_10_FRONT_END_JQUERY/pages/sites/produtos.html"><div class="opcao">Produtos</div></a>
+        <a href="/OT_10_FRONT_END_JQUERY/pages/sites/faleconosco.html"><div class="opcao">Fale conosco</div></a>
+    </nav>
+
+    <section>
+
+        <h2>Fale conosco!</h2>
+        <p>Ficou alguma dúvida? Preencha este formulário e entraremos em contato!</p>
+        <form name="frmfaleconosco" method="get" action="#" onsubmit="return validaFaleConosco()">
+
+            <fieldset class="faleConosco">
+                <legend>Dados pessoais:</legend>
+
+                <label for="nome">Nome:</label>
+                <input placeholder="Nome e sobrenome" type="text" name="txtnome" id="nome">
+
+                <label for="fone">Telefone:</label>
+                <input placeholder="(**)*****-****" type="text" name="txtfone" id="fone">
+
+                <label for="email">E-mail:</label>
+                <input placeholder="teste@gmail.com" type="email" name="txtemail" id="email">
+
+            </fieldset>
+
+            <fieldset class="faleConosco">
+                <legend>Motivo do contato:</legend>
+
+                <label for="motivo">Motivo: </label>
+                <select name="selmotivo" id="motivo" onchange="verificaMotivo(this.value)">
+                    <option value="">Escolha</option>
+                    <option value="RE">Reclamação</option>
+                    <option value="SU">Sugestão</option>
+                    <option value="PR">Informação sobre produto</option>
+                </select>
+
+                <div id="opcaoProduto"></div>
+
+                <label for="comentario">Comentário</label>
+                <textarea name="txacomentario"></textarea>
+                <button type="reset" onclick="verificaMotivo(null)">Limpar</button><button type="submit">Enviar</button>
+
+            </fieldset>
+
+            
+        </form>
+
+    </section>
+
+    <footer>Copyright &copy; Escola Sistêmica 2024</footer>
+</body>
+</html>
