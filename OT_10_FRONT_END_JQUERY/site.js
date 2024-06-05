@@ -137,5 +137,14 @@ function verificaMotivo(motivo){
     }
 
    
-}
+}//fim da função verifica(motivo)
+
+//Assim que o documento HTMl for carregado por completo...
+$(document).ready(function() {
+    //Carrega o cabeçalho, menu e rodapé aos respectivos locais
+    $("header").load("/OT_10_FRONT_END_JQUERY/pages/sites/general/cabecalho.html");
+    $("nav").load("/OT_10_FRONT_END_JQUERY/pages/sites/general/menu.html");
+    $("footer").load("/OT_10_FRONT_END_JQUERY/pages/sites/general/rodape.html");
+
+});
 
